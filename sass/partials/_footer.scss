@@ -1,0 +1,46 @@
+$font:'Roboto Condensed', sans-serif;
+$blanco:white;
+
+
+
+footer {
+    background-color: black;
+    color: $blanco;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font;
+
+    .footer-left {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+            list-style: none;
+                a {
+                color: $blanco;
+                font-family: $font;
+                }
+            }
+        }
+        
+      .footer-center {
+        flex: 1;
+      }
+
+      .footer-right {
+        display: flex;
+        align-items: center;
+
+        a {
+            img {
+                width: 30px;
+                margin-left: 10px;
+            }
+        }
+      }
+
+}

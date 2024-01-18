@@ -1,0 +1,55 @@
+$blanco:#fff;
+
+* {
+    font-family: sans-serif;
+  }
+  
+.contact-form{
+    background: $blanco;
+    margin-bottom: 5%;
+    width: 70%;
+
+    h3 {
+        margin-bottom: 8%;
+        margin-top: -10%;
+        text-align: center;
+        color: black;
+    }
+
+    .btnContact {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+        background: black;
+        font-weight: 600;
+        color: $blanco;
+        cursor: pointer;
+    }
+
+    .btnContactSubmit {
+        width: 50%;
+         border-radius: 1rem;
+         padding: 1.5%;
+         color: $blanco;
+         background-color: black;
+         border: none;
+         cursor: pointer;
+    }
+
+    .form-control {
+        border-radius:1rem;
+    }
+
+    form {
+        padding: 14%;
+
+        .row {
+            margin-bottom: -7%;
+        }
+    }
+  }
+
+.contact-image{
+    text-align: center;
+  }

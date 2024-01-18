@@ -1,0 +1,39 @@
+$azul:#0062cc;
+
+* {
+    font-family: sans-serif;
+  }
+  
+.box {
+
+    padding:60px 0px;
+
+    span {
+        font-size:15px;
+    }
+
+    a {
+        text-decoration:none; 
+        color: $azul;
+        border-bottom:2px solid $azul;
+    }
+
+    text {
+        margin:20px 0px;
+    }
+
+    img {
+        width: 40%;
+    }
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+  }
+  
+  .fa{
+     color:$azul;
+  }
