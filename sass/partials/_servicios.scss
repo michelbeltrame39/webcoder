@@ -4,6 +4,13 @@ $azul:#0062cc;
     font-family: sans-serif;
   }
   
+main div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .box {
 
     padding:60px 0px;
