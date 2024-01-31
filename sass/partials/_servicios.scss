@@ -3,14 +3,17 @@ $azul:#0062cc;
 * {
     font-family: sans-serif;
   }
-  
-main div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
 
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+  
 .box {
 
     padding:60px 0px;
@@ -43,4 +46,10 @@ main div {
   
   .fa{
      color:$azul;
+  }
+
+  @media (max-width: 768px) {
+    .box-part {
+        padding: 0%;
+    }
   }

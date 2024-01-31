@@ -4,6 +4,7 @@ $font: sans-serif;
     font-family: $font;
 }
 
+
 .header-text {
     padding: 10vh;
 
@@ -16,6 +17,11 @@ $font: sans-serif;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
+
+    @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+      }
+    
 
     .item-1 {
         grid-row-start: 1;
@@ -38,10 +44,40 @@ $font: sans-serif;
 
     .item-3 {
         img {
-            max-height: 5vh;
+            max-height: 15vh;
+        }
+
+        p {
+          font-size: large;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center;
+          align-items: center;
+          justify-content: c;
         }
     }
+
+  }
+
+  @media (max-width: 768px) {
+    .iconos-servicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    .icono-servicios {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+  }
+
+  .item-3 {
+    img {
+      height: 10vh;
+    }
+  }
 }
+
 
 .button1 {
     display:inline-block;
@@ -74,19 +110,17 @@ $font: sans-serif;
 .grid-container {
     display: grid;
     align-items: center;
-    padding: 20px;
+    padding: 2%;
+    margin-bottom: 4%;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-template-areas:
-      "image1 image2 image3 image4"
-      "image5 image6 image7 image8"
-      "image9 image10 image11 image12"
-      "image13 image14 image15 image16"
-      "image17 . . .";
+      "image1 image2 image3 image4";
       
       img {
         display: flex;
         justify-content: center;
+        align-items: center;
         max-width: 50%;
         height: auto;
       }
@@ -106,58 +140,6 @@ $font: sans-serif;
     .image4 {
         grid-area: image4;
       }
-    
-    .image5 {
-        grid-area: image5;
-      }
-    
-    .image6 {
-        grid-area: image6;
-      }
-    
-    .image7 {
-        grid-area: image7;
-      }
-    
-    .image8 {
-        grid-area: image8;
-      }
-    
-    .image9 {
-        grid-area: image9;
-      }
-    
-    .image10 {
-        grid-area: image10;
-      }
-    
-    .image11 {
-        grid-area: image11;
-      }
-    
-    .image12 {
-        grid-area: image12;
-      }
-    
-    .image13 {
-        grid-area: image13;
-      }
-    
-    .image14 {
-        grid-area: image14;
-      }
-    
-    .image15 {
-        grid-area: image15;
-      }
-    
-    .image16 {
-        grid-area: image16;
-      }
-    
-    .image17 {
-        grid-area: image17;
-      }
 }
 
 .galery {
@@ -167,19 +149,21 @@ $font: sans-serif;
     margin: auto 0;
     padding: 0 200px;
   
-  @media screen and (max-width: 768px) {
-    .images {
-      flex-direction: column;
-      padding: 0;
-    }
-  }
+    @media screen and (max-width: 768px) {
 
-  img {
-    display: block;
-    height: auto;
-    max-width: 50%;
-    margin: 20px;
-  }
+
+      .images {
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+  
+    img {
+      display: block;
+      height: auto;
+      max-width: 50%;
+      margin: 2%;
+    }
 }
 
 /* Botones */
@@ -193,4 +177,10 @@ button {
     padding: 14px 24px 16px;
     font-size: 18px;
     font-weight: 700;
+}
+
+.d-flex {
+  @media (max-width: 768px) {
+      height: 12vh;
+    }
 }

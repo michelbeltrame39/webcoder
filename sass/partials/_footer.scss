@@ -44,3 +44,14 @@ footer {
       }
 
 }
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      padding-top: 3%;
+    }
+  }
+}
